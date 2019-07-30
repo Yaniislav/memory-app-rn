@@ -95,6 +95,7 @@ export default class GameScreen extends Component {
         onBackPress={this.onBackPress}
         onCardPress={this.onCardPress}
         onPlayPress={this.onPlayPress}
+        onTryAgainPress={this.fetchNumbers}
       />
     );
   }

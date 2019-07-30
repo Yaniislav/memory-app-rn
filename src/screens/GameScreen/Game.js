@@ -17,6 +17,7 @@ export default class Game extends Component {
     onCardPress: PropTypes.func,
     onPlayPress: PropTypes.func,
     hideCards: PropTypes.bool,
+    onTryAgainPress: PropTypes.func,
   };
 
   onPlayPress = () => {
@@ -25,10 +26,20 @@ export default class Game extends Component {
 
   renderCards = () => {
     const {
-      loading, fetchError, data, onCardPress, hideCards,
+      loading, fetchError, data, onCardPress, hideCards, onTryAgainPress,
     } = this.props;
     if (loading) {
       return <ActivityIndicator size={'large'} />;
+    }
+
+    if (fetchError) {
+      return (
+        <DefaultButton
+          title={'Try Again'}
+          color='red'
+          onPress={onTryAgainPress}
+        />
+      );
     }
     const numberOfColumns = data.length / 4;
 
