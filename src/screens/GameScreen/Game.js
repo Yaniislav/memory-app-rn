@@ -20,10 +20,6 @@ export default class Game extends Component {
     onTryAgainPress: PropTypes.func,
   };
 
-  onPlayPress = () => {
-    this.props.onPlayPress();
-  }
-
   renderCards = () => {
     const {
       loading, fetchError, data, onCardPress, hideCards, onTryAgainPress,
@@ -56,7 +52,7 @@ export default class Game extends Component {
   }
 
   render() {
-    const { onBackPress, loading, hideCards } = this.props;
+    const { onBackPress, loading, hideCards, onPlayPress } = this.props;
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.gameContainer}>
@@ -65,7 +61,7 @@ export default class Game extends Component {
         <View style={styles.menuContainer}>
           <DefaultButton
             title={'Play'}
-            onPress={this.onPlayPress}
+            onPress={onPlayPress}
             disabled={loading || hideCards}
           />
           <DefaultButton
