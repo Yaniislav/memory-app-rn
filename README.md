@@ -46,11 +46,11 @@ yarn start -- --reset-cache
 
 Runs the [jest](https://github.com/facebook/jest) test runner on your tests.
 
-#### `react-native run ios`
+#### `react-native run-ios`
 Before using this command, please run `yarn pod`.
 Attempts to open your app in the iOS Simulator if you're on a Mac and have it installed. Also you can manually launch app through xCode (open `.xworkspace` file in `/ios` directory)
 
-#### `react-native run android`
+#### `react-native run-android`
 
 Attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools (see [React Native docs](https://facebook.github.io/react-native/docs/getting-started.html) for detailed setup). We also recommend installing Genymotion as your Android emulator. Once you've finished setting up the native build environment, there are two options for making the right copy of `adb` available to Create React Native App.
 Also you can manually launch app through `Android Studio`.
