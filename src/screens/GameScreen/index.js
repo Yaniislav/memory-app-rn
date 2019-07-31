@@ -41,7 +41,6 @@ export default class GameScreen extends Component {
         hideCards: false,
       });
     } catch (error) {
-      console.log(error)
       this.setState({ fetchError: true, loading: false, data: [] });
     }
   }
