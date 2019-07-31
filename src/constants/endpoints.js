@@ -1,2 +1,2 @@
-export const BASE_API_URL = 'http://127.0.0.1:8080';
+export const BASE_API_URL = 'https://memory-app-test.herokuapp.com';
 export const NUMBERS_ENDPOINT = 'api/numbers';

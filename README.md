@@ -17,8 +17,8 @@ Run `yarn` in the root of the project.
 	- [Available Scripts](#available-scripts)
 		- [`yarn start`](#yarn-start)
 			- [`yarn test`](#yarn-test)
-			- [`react-native run ios`](#react-native-run-ios)
-			- [`react-native run android`](#react-native-run-android)
+			- [`react-native run-ios`](#react-native-run-ios)
+			- [`react-native run-android`](#react-native-run-android)
 
 ## Updating to New Releases
 
